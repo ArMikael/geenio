@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey Example</title>
+
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<main class="main">
+		<h1 class="survey-title">Survey Example</h1>
+		<form>
+			<section class="question">
+				<div class="question-header">
+					<h3 class="question-title">
+						How clearly was the information presented in this course?
+					</h3>
+				</div>
+				<div class="question-body">
+					<div class="answer-title">Totally Unclear</div>
+					<div class="answer-body">
+						<input type="radio" name="information" class="radio-btn-num" value="1">
+						<input type="radio" name="information" class="radio-btn-num" value="2">
+						<input type="radio" name="information" class="radio-btn-num" value="3">
+						<input type="radio" name="information" class="radio-btn-num" value="4">
+						<input type="radio" name="information" class="radio-btn-num" value="5">
+					</div>
+					<div class="answer-title">Completely Clear</div>
+				</div>
+			</section>
+			<section class="question">
+				<div class="question-header">
+					<h3 class="question-title">
+						Questions in tests were relevant and helped me to acquire new knowledge
+					</h3>
+				</div>
+				<div class="question-body">
+					<div class="answer-body">
+						<input type="radio" name="questions" class="radio-btn" value="yes" id="answer1">
+						<label class="answer-label" for="answer1">Yes</label>
+
+						<input type="radio" name="questions" class="radio-btn" value="no" id="answer2">
+						<label class="answer-label" for="answer2">No</label>
+					</div>
+				</div>
+			</section>
+			<section class="question">
+				<div class="question-header">
+					<h3 class="question-title">
+						The most disturbing thing during the course was...
+					</h3>
+				</div>
+				<div class="question-body">
+					<input class="open-question-field" type="text" id="disturbing" placeholder="Your answer">
+				</div>
+			</section>
+			<section class="question">
+				<div class="question-header">
+					<h3 class="question-title">
+						I liked the look and feel of the course
+					</h3>
+				</div>
+				<div class="question-body">
+					<input type="radio" name="look-feel" class="radio-btn" value="yes" id="agree">
+					<label class="answer-label" for="agree">Agree</label>
+
+					<input type="radio" name="look-feel" class="radio-btn" value="no" id="disagree">
+					<label class="answer-label" for="disagree">Disagree</label>
+				</div>
+				</div>
+			</section>
+			<section class="question">
+				<div class="question-header">
+					<h3 class="question-title">
+						How engaging you found the course?
+					</h3>
+				</div>
+				<div class="question-body">
+					<div class="answer-title">It was Borring</div>
+					<div class="answer-body">
+						<input type="radio" name="engage" class="radio-btn-num" value="1">
+						<input type="radio" name="engage" class="radio-btn-num" value="2">
+						<input type="radio" name="engage" class="radio-btn-num" value="3">
+						<input type="radio" name="engage" class="radio-btn-num" value="4">
+						<input type="radio" name="engage" class="radio-btn-num" value="5">
+					</div>
+					<div class="answer-title">It was very Engaging</div>
+				</div>
+			</section>
+			<section class="question">
+				<div class="question-header">
+					<h3 class="question-title">
+						List 3 important concepts that you learned in this course
+					</h3>
+				</div>
+				<div class="question-body">
+					<input class="open-question-field" type="text" id="concepts"
+					placeholder="1... , 2... , 3...">
+				</div>
+			</section>
+			<section class="question">
+				<div class="question-header">
+					<h3 class="question-title">
+						Did the course led you changing any of your behaviour or practice?
+					</h3>
+				</div>
+				<div class="question-body">
+					<input type="radio" name="behaviour" class="radio-btn" value="yes" id="behaviour1">
+					<label class="answer-label" for="behaviour1">Yes</label>
+
+					<input type="radio" name="behaviour" class="radio-btn" value="no"  id="behaviour2">
+					<label class="answer-label" for="behaviour2">No</label>
+				</div>
+			</section>
+			<section class="question">
+				<div class="question-header">
+					<h3 class="question-title">
+						Suggest 2 things to improve this course
+					</h3>
+				</div>
+				<div class="question-body">
+					<input class="open-question-field" type="text" id="suggestions"
+					placeholder="Your answer">
+				</div>
+			</section>
+
+			<button class="send-btn">Send</button>
+		</form>
+	</main>
+</body>
+</html>
