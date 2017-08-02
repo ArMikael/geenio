@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Пример опроса</title>
+
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<main class="main">
+		<h1 class="survey-title">Пример опроса</h1>
+			<a class="logo-link" href="https://geen.io/">
+				<img src="img/geenio-logo.png" class="logo" alt="Geenio logo">
+			</a>
+
+		<form>
+			<section class="question">
+				<div class="question-header">
+					<h3 class="question-title">
+						Насколько понятной была информация представленная в курсе?
+					</h3>
+				</div>
+				<div class="question-body">
+					<div class="answer-title">Абсолютно непонятной</div>
+					<div class="answer-body">
+						<input type="radio" name="information" class="radio-btn-num" value="1">
+						<input type="radio" name="information" class="radio-btn-num" value="2">
+						<input type="radio" name="information" class="radio-btn-num" value="3">
+						<input type="radio" name="information" class="radio-btn-num" value="4">
+						<input type="radio" name="information" class="radio-btn-num" value="5">
+					</div>
+					<div class="answer-title">Очень понятной</div>
+				</div>
+			</section>
+			<section class="question">
+				<div class="question-header">
+					<h3 class="question-title">
+						Вопросы в тестах соответствовали теме и помогли мне приобрести новые знания
+					</h3>
+				</div>
+				<div class="question-body">
+					<div class="answer-body">
+						<input type="radio" name="questions" class="radio-btn" value="yes" id="answer1">
+						<label class="answer-label" for="answer1">Да</label>
+
+						<input type="radio" name="questions" class="radio-btn" value="no" id="answer2">
+						<label class="answer-label" for="answer2">Нет</label>
+					</div>
+				</div>
+			</section>
+			<section class="question">
+				<div class="question-header">
+					<h3 class="question-title">
+						Самым неприятным во время курса было...
+					</h3>
+				</div>
+				<div class="question-body">
+					<input class="open-question-field" type="text" id="disturbing" placeholder="Ваш ответ">
+				</div>
+			</section>
+			<section class="question">
+				<div class="question-header">
+					<h3 class="question-title">
+						Мне понравилось оформление курса
+					</h3>
+				</div>
+				<div class="question-body">
+					<input type="radio" name="look-feel" class="radio-btn" value="yes" id="agree">
+					<label class="answer-label" for="agree">Согласен</label>
+
+					<input type="radio" name="look-feel" class="radio-btn" value="no" id="disagree">
+					<label class="answer-label" for="disagree">Несогласен</label>
+				</div>
+				</div>
+			</section>
+			<section class="question">
+				<div class="question-header">
+					<h3 class="question-title">
+						Насколько увлекательным был курс?
+					</h3>
+				</div>
+				<div class="question-body">
+					<div class="answer-title">Очень скучным</div>
+					<div class="answer-body">
+						<input type="radio" name="engage" class="radio-btn-num" value="1">
+						<input type="radio" name="engage" class="radio-btn-num" value="2">
+						<input type="radio" name="engage" class="radio-btn-num" value="3">
+						<input type="radio" name="engage" class="radio-btn-num" value="4">
+						<input type="radio" name="engage" class="radio-btn-num" value="5">
+					</div>
+					<div class="answer-title">Очень интересным</div>
+				</div>
+			</section>
+			<section class="question">
+				<div class="question-header">
+					<h3 class="question-title">
+						Назовите 3 важных понятия или идеи, которые вы узнали из этого курса:
+					</h3>
+				</div>
+				<div class="question-body">
+					<input class="open-question-field" type="text" id="concepts"
+					placeholder="1... , 2... , 3...">
+				</div>
+			</section>
+			<section class="question">
+				<div class="question-header">
+					<h3 class="question-title">
+						Курс заставил вас как-то поменять свое поведение или обычную практику?
+					</h3>
+				</div>
+				<div class="question-body">
+					<input type="radio" name="behaviour" class="radio-btn" value="yes" id="behaviour1">
+					<label class="answer-label" for="behaviour1">Да</label>
+
+					<input type="radio" name="behaviour" class="radio-btn" value="no"  id="behaviour2">
+					<label class="answer-label" for="behaviour2">Нет</label>
+				</div>
+			</section>
+			<section class="question">
+				<div class="question-header">
+					<h3 class="question-title">
+						Предложите 2 вещи, которые могли бы улучшить этот курс:
+					</h3>
+				</div>
+				<div class="question-body">
+					<input class="open-question-field" type="text" id="suggestions"
+					placeholder="Ваш ответ">
+				</div>
+			</section>
+
+			<button class="send-btn">Отправить</button>
+		</form>
+	</main>
+</body>
+</html>
